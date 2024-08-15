@@ -148,8 +148,6 @@ class AV_KS_Dataset_armr(Dataset):
 
         print('data load finish')
         length = len(self.data)
-
-        #visual = 2, audio = 1, none = 0
         
         for i in range(length):
             cona, conv = contribution[i]
