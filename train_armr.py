@@ -99,7 +99,6 @@ def execute_modulation(args, model, device, dataloader, log_name, epoch):
 
 
             for i, item in enumerate(label):
-                #------MI分数
                 fea_a = out_a[i]
                 fea_v = out_v[i]
                 fea = out[i]
