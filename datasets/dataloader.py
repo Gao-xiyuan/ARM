@@ -18,17 +18,17 @@ class AV_KS_Dataset(Dataset):
         self.label = []
         
         if mode=='train':
-            csv_path = 'ks_audio/train_1fps_path.txt'
+            csv_path = 'ks_audio/train.txt'
             self.audio_path = 'ks_audio/train/'
             self.visual_path = 'ks_visual/train/'
         
         elif mode=='val':
-            csv_path = 'ks_audio/val_1fps_path.txt'
+            csv_path = 'ks_audio/val.txt'
             self.audio_path = 'ks_audio/val/'
             self.visual_path = 'ks_visual/val/'
 
         else:
-            csv_path = 'ks_audio/test_1fps_path.txt'
+            csv_path = 'ks_audio/test.txt'
             self.audio_path = 'ks_audio/test/'
             self.visual_path = 'ks_visual/test/'
 
@@ -121,17 +121,17 @@ class AV_KS_Dataset_armr(Dataset):
         self.drop = []
         
         if mode=='train':
-            csv_path = 'ks_audio/train_1fps_path.txt'
+            csv_path = 'ks_audio/train.txt'
             self.audio_path = 'ks_audio/train/'
             self.visual_path = 'ks_visual/train/'
         
         elif mode=='val':
-            csv_path = 'ks_audio/val_1fps_path.txt'
+            csv_path = 'ks_audio/val.txt'
             self.audio_path = 'ks_audio/val/'
             self.visual_path = 'ks_visual/val/'
 
         else:
-            csv_path = 'ks_audio/test_1fps_path.txt'
+            csv_path = 'ks_audio/test.txt'
             self.audio_path = 'ks_audio/test/'
             self.visual_path = 'ks_visual/test/'
 
@@ -148,6 +148,8 @@ class AV_KS_Dataset_armr(Dataset):
 
         print('data load finish')
         length = len(self.data)
+
+        #visual = 2, audio = 1, none = 0
         
         for i in range(length):
             cona, conv = contribution[i]
