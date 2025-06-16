@@ -70,10 +70,13 @@ We provide pretrained models and training logs for reproducibility:
 If you find our work useful, please consider citing:
 
 ```bibtex
-@article{your2025arm,
-  title={Asymmetric Reinforcing against Multimodal Representation Bias},
-  author={Your Name and Others},
-  journal={ArXiv},
+@inproceedings{gao2025asymmetric,
+  title={Asymmetric Reinforcing against Multi-modal Representation Bias},
+  author={Gao, Xiyuan and Cao, Bing and Zhu, Pengfei and Wang, Nannan and Hu, Qinghua},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={16},
+  pages={16754-16762},
   year={2025}
 }
 ```
