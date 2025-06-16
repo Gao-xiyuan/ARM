@@ -63,7 +63,7 @@ We provide pretrained models and training logs for reproducibility:
 |-------------|----------|--------|------------|--------------|
 |  Kinetics-Sounds | ResNet18 | [resnet18_ks.py](configs/arm/resnet18_ks.py) | [Download](work_dirs/) | [Log](work_dirs/train_log.log) |
 
-> 📝 *Note: Please ensure to use the same config and environment for consistent results.*
+<!-- > 📝 *Note: Please ensure to use the same config and environment for consistent results.* -->
 
 ## 📄 Citation
 
